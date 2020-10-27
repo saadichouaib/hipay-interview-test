@@ -7,6 +7,7 @@
         "protractor": "^5.4.2"
     },
     "devDependencies": {
+        "chai": "^4.2.0",
         "@wdio/cli": "^5.18.1",
         "@wdio/selenium-standalone-service": "^5.16.10",
         "allure-commandline": "^2.13.0",

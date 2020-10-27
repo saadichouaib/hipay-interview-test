@@ -22,8 +22,12 @@ exports.config = {
         headless: false
       },
       angular: false
-      } 
+      },
+      REST: {
+        endpoint: 'https://stage-secure-gateway.hipay-tpp.com/rest',
+        onRequest: (request) => {   } 
     },
+  },
   include: {
     paymentPage: './pages/payment.js',
   },
