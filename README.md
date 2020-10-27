@@ -63,3 +63,5 @@ Online payments --
 
   OK  | 2 passed   // 23s
 ```
+
+![name-of-you-image](https://github.com/saadichouaib/HP_QA_Test/blob/main/output/allure_report.png)
