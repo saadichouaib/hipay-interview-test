@@ -1,3 +1,4 @@
 /output/*
 !/output/environment.properties
+!/output/allure_report.png
 /node_modules/
