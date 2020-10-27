@@ -1,0 +1,15 @@
+{
+    "name": "hp_test",
+    "version": "0.1.0",
+    "dependencies": {
+        "allure-commandline": "^2.13.0",
+        "codeceptjs": "^2.3.6",
+        "protractor": "^5.4.2"
+    },
+    "devDependencies": {
+        "@wdio/cli": "^5.18.1",
+        "@wdio/selenium-standalone-service": "^5.16.10",
+        "allure-commandline": "^2.13.0",
+        "webdriverio": "^5.18.4"
+    }
+}
