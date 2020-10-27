@@ -25,11 +25,16 @@ exports.config = {
       },
       REST: {
         endpoint: 'https://stage-secure-gateway.hipay-tpp.com/rest',
-        onRequest: (request) => {   } 
+        defaultHeaders: {
+          'Authorization': 'Basic OTQ2NTgzNjUuc3RhZ2Utc2VjdXJlLWdhdGV3YXkuaGlwYXktdHBwLmNvbTpUZXN0X1JoeXBWdktpUDY4VzNLQUJ4eUdoS3Zlcw==',
+          'Content-Type': 'multipart/form-data',
+          'Accept': 'application/json',
+        },
     },
   },
   include: {
     paymentPage: './pages/payment.js',
+    I: './steps_file.js',
   },
   bootstrap: null,
   mocha: {},
