@@ -1,5 +1,6 @@
 const { I } = inject();
-let postBody, headers;
+const expect = require('chai').expect;
+let postBody;
 
 module.exports = {
   data:{
@@ -21,6 +22,22 @@ module.exports = {
   },
   button:{
     pay:'//*[@id="submit-button"]'
+  },
+
+  async generateForwardUrl(productList){
+    postBody = {
+      orderid : 'ORDER_1603795254979',
+      description : 'desc',
+      currency : 'EUR',
+      amount : '8.99',
+      payment_product_list : productList,
+      css : 'https://developer.hipay.com/misc/simulator/css-responsive.css',
+      template : 'basic-js'
+    };
+  
+    const resp = await I.sendPostRequest('/v1/hpayment', postBody);
+    expect(resp.status).to.eql(200);  
+    return(resp.data.forwardUrl);
   },
 
   verifySinglePayment(){
