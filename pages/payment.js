@@ -38,7 +38,6 @@ module.exports = {
     const resp = await I.sendPostRequest('/v1/hpayment', postBody);
     expect(resp.status).to.eql(200);  
     return(resp.data.forwardUrl);
-    //I.amOnPage(resp.data.forwardUrl);
   },
 
   verifySinglePayment(){
