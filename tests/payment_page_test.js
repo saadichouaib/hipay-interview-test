@@ -6,6 +6,7 @@ Scenario('Verify single payment display', async (I,paymentPage) => {
     I.amOnPage(await paymentPage.generateForwardUrl('visa'));
     paymentPage.waitToLoad();
     paymentPage.verifySinglePayment();
+    // comment
 });
 
 Scenario('Verify multi payment display', async (I,paymentPage) => {
